@@ -19,18 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9a8e21e-a144-4abb-93a6-abdce50cd858" name="Default Changelist" comment="[WIP] - Working version - before tests">
-      <change afterPath="$PROJECT_DIR$/bootstrap.php" afterDir="false" />
+    <list default="true" id="a9a8e21e-a144-4abb-93a6-abdce50cd858" name="Default Changelist" comment="code review part 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/RequestModelPrototype.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/RequestModelPrototype.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/money/AmountPrototype.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/money/AmountPrototype.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/revenue/RevenueStrategy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/revenue/RevenueStrategy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/revenue/strategy/BaseRevenuePlan.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/revenue/strategy/BaseThresholdPlan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/CalculationService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CalculationService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/CalculationResultTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/CalculationResultTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604673613517</updated>
-      <workItem from="1604673614839" duration="45662000" />
+      <workItem from="1604673614839" duration="46545000" />
     </task>
     <task id="LOCAL-00001" summary="[WIP] - Working version - before tests">
       <created>1604754352784</created>
@@ -98,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604754368600</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First review">
+      <created>1604764526891</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604764526891</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +118,9 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="[WIP] - Working version - before tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="[WIP] - Working version - before tests" />
+    <MESSAGE value="First review" />
+    <MESSAGE value="code review part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="code review part 1" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -148,6 +150,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1604744694145" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1604764532550">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604764532550" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604710457223">
       <screen x="0" y="23" width="1440" height="801" />
     </state>

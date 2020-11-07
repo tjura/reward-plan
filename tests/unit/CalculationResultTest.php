@@ -11,7 +11,6 @@ use src\models\player\PlayerCollection;
 use src\models\revenue\RevenueStrategy;
 use src\models\revenue\strategy\BaseThresholdPlan;
 use src\models\threshold\Threshold;
-use src\models\user\UserInterface;
 use src\services\CalculationService;
 
 class CalculationResultTest extends \Codeception\Test\Unit
@@ -41,8 +40,6 @@ class CalculationResultTest extends \Codeception\Test\Unit
         /*
          * Check calculation result
          */
-        /** @var UserInterface $user */
-        $player = $calculationResult[0][0];
         /** @var MoneyInterface $provision */
         $provision = $calculationResult[0][1];
         $this->assertEquals(100.00, $provision->getAmount());
@@ -60,8 +57,8 @@ class CalculationResultTest extends \Codeception\Test\Unit
         $this->checkCalculations([
             [9500, 950],
             [2340.6, 418.12],
-            [-3256.12, 509.67],
-            [-120000, 19858.45],
+            [-3256.12, -509.67],
+            [-120000, -19858.45],
             [231415.52, 38000],
         ]);
     }
@@ -90,7 +87,7 @@ class CalculationResultTest extends \Codeception\Test\Unit
         $this->checkCalculations([
             [9000, 900],
             [2000, 300],
-            [-3000, 400],
+            [-3000, -400],
         ]);
     }
 
@@ -101,6 +98,7 @@ class CalculationResultTest extends \Codeception\Test\Unit
     {
         $incomeAmount = 1000000;
 
+        /** @var RevenueStrategy $thresholdPlan */
         $thresholdPlan = $this->construct(RevenueStrategy::class, [], [
             'setThresholds' => function (){
             },

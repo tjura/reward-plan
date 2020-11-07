@@ -13,7 +13,7 @@ use function sprintf;
  * Class MoneyPrototype
  * @package src\models\money
  */
-abstract class AmountPrototype implements AmountInterface, MoneyOperationsInterface
+abstract class AmountPrototype implements MoneyOperationsInterface, AmountInterface
 {
     public const ROUND_PRECISION = 2;
 

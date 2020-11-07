@@ -35,6 +35,7 @@ abstract class RevenueStrategy
         $revenueAmount = $revenuePayment->getAmount();
         $endingMoneyAmount = $startingAccountAmount + $revenueAmount;
         $provisionSum = new Money(0.0, $revenuePayment->getCurrency());
+
         foreach ($this->thresholds as $threshold) {
             $affiliateBalanceMin = min($startingAccountAmount, $endingMoneyAmount);
             $affiliateBalanceMax = max($startingAccountAmount, $endingMoneyAmount);
@@ -42,23 +43,15 @@ abstract class RevenueStrategy
             if (false === $this->isMoneyRangeMatchToThreshold($affiliateBalanceMin, $affiliateBalanceMax, $threshold)) {
                 continue;
             }
-
-            $thresholdMin = $threshold->getMinAmount();
-            $thresholdMax = $threshold->getMaxAmount();
-
-            if (null === $thresholdMin) {
-                $thresholdStart = $affiliateBalanceMin;
-            } else {
-                $thresholdStart = $thresholdMin->getAmount();
-            }
-
-            if (null === $thresholdMax) {
-                $thresholdEnd = $affiliateBalanceMax;
-            } else {
-                $thresholdEnd = $thresholdMax->getAmount();
-            }
-
+            $thresholdStart = 0.0;
+            $thresholdEnd = 0.0;
+            $this->setThresholdAmount($threshold, $thresholdStart, $thresholdEnd, $affiliateBalanceMin, $affiliateBalanceMax);
             $commonPart = $this->getRangesCommonPart([$affiliateBalanceMin, $affiliateBalanceMax, $thresholdStart, $thresholdEnd]);
+
+            if ($revenuePayment->getAmount() < 0) {
+                $commonPart *= -1;
+            }
+
             $provisionSum->add($this->getProvisionAmount($commonPart, $threshold->getPercentage()));
         }
 
@@ -85,11 +78,36 @@ abstract class RevenueStrategy
     }
 
     /**
+     * @param Threshold $threshold
+     * @param float     $thresholdStart
+     * @param float     $thresholdEnd
+     * @param float     $affiliateBalanceMin
+     * @param float     $affiliateBalanceMax
+     */
+    private function setThresholdAmount(Threshold $threshold, float &$thresholdStart, float &$thresholdEnd, float $affiliateBalanceMin, float $affiliateBalanceMax): void
+    {
+        $thresholdMin = $threshold->getMinAmount();
+        $thresholdMax = $threshold->getMaxAmount();
+
+        if (null === $thresholdMin) {
+            $thresholdStart = $affiliateBalanceMin;
+        } else {
+            $thresholdStart = $thresholdMin->getAmount();
+        }
+
+        if (null === $thresholdMax) {
+            $thresholdEnd = $affiliateBalanceMax;
+        } else {
+            $thresholdEnd = $thresholdMax->getAmount();
+        }
+    }
+
+    /**
      * @param array $amounts
      *
-     * @return mixed
+     * @return float
      */
-    protected function getRangesCommonPart(array $amounts)
+    protected function getRangesCommonPart(array $amounts): float
     {
         sort($amounts);
 
@@ -118,6 +136,9 @@ abstract class RevenueStrategy
         $this->thresholds[] = $threshold;
     }
 
+    /**
+     * @return bool
+     */
     abstract protected function isMirrorThresholdsActive(): bool;
 
 }

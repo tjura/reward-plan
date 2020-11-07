@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a9a8e21e-a144-4abb-93a6-abdce50cd858" name="Default Changelist" comment="[WIP] - Working version - before tests">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/reward-plan.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/yii2settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.phar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/RequestModelPrototype.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/exception/ApiException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/exception/RequestException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/request/Player.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/response/CalculationResult.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/ApiController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/affiliate/Affiliate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/affiliate/ConfigurationException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/money/Amount.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/money/AmountInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/money/AmountPrototype.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/money/CurrencyPrototype.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/money/Money.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/money/MoneyInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/money/MoneyOperationsInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/money/MoneyPrototype.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/money/currency/Euro.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/player/Player.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/player/PlayerCollection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/revenue/RevenueStrategy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/revenue/WrongValueException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/revenue/strategy/BaseRevenuePlan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/threshold/Threshold.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/user/UserInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/user/UserPrototype.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/CalculationService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jv9HxDnNkUgoJ2FWExNaWTnyI6" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/models/money" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/api/exception" />
+      <recent name="$PROJECT_DIR$/src/api/request" />
+      <recent name="$PROJECT_DIR$/src/api" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/models/money" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/models/money" />
+      <recent name="$PROJECT_DIR$/src/models/revenue/strategy" />
+      <recent name="$PROJECT_DIR$/src/models/affiliate" />
+      <recent name="$PROJECT_DIR$/src/models/money/currency" />
+      <recent name="$PROJECT_DIR$/src/affiliate" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9a8e21e-a144-4abb-93a6-abdce50cd858" name="Default Changelist" comment="" />
+      <created>1604673613517</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604673613517</updated>
+      <workItem from="1604673614839" duration="35989000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[WIP] - Working version - before tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="[WIP] - Working version - before tests" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="98" key="#Plugins" timestamp="1604674126150">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="98" key="#Plugins/0.0.1440.900@0.0.1440.900" timestamp="1604674126150" />
+    <state x="508" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1604753522464">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="508" y="139" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1604753522464" />
+    <state x="548" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604754235385">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="548" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1604754235385" />
+    <state x="594" y="182" key="NewPhpClassDialog" timestamp="1604753282378">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="594" y="182" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1604753282378" />
+    <state x="539" y="380" key="NewPhpFileDialog" timestamp="1604681488772">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="539" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1604681488772" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1604744694145">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1604744694145" />
+    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604710457223">
+      <screen x="0" y="23" width="1440" height="801" />
+    </state>
+    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.801@0.23.1440.801" timestamp="1604710457223" />
+    <state x="418" y="176" width="604" height="548" key="find.popup" timestamp="1604754012290">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="418" y="176" width="604" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1604754012290" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604745192412">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604745192412" />
+  </component>
+</project>

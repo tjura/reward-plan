@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a9a8e21e-a144-4abb-93a6-abdce50cd858" name="Default Changelist" comment="code review part 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/money/AmountPrototype.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/money/AmountPrototype.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/revenue/RevenueStrategy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/revenue/RevenueStrategy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/CalculationResultTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/CalculationResultTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604673613517</updated>
-      <workItem from="1604673614839" duration="46545000" />
+      <workItem from="1604673614839" duration="47851000" />
     </task>
     <task id="LOCAL-00001" summary="[WIP] - Working version - before tests">
       <created>1604754352784</created>
@@ -98,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604764526891</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="code review part 1">
+      <created>1604765459493</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604765459493</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,10 +155,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1604744694145" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1604764532550">
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1604765460818">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604764532550" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604765460818" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604710457223">
       <screen x="0" y="23" width="1440" height="801" />
     </state>
@@ -166,9 +171,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1604763306885" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604745192412">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604767646955">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604745192412" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604767646955" />
   </component>
 </project>

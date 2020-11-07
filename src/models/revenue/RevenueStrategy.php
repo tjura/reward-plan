@@ -43,13 +43,23 @@ abstract class RevenueStrategy
                 continue;
             }
 
-            $thresholdStart = $threshold->getMinAmount()->getAmount();
-            $thresholdEnd = $threshold->getMaxAmount()->getAmount();
+            $thresholdMin = $threshold->getMinAmount();
+            $thresholdMax = $threshold->getMaxAmount();
 
-            $values = [$affiliateBalanceMin, $affiliateBalanceMax, $thresholdStart, $thresholdEnd];
-            sort($values);
-            $commonPart = $values[2] - $values[1];
-            $provisionSum->add($commonPart * $threshold->getPercentage());
+            if (null === $thresholdMin) {
+                $thresholdStart = $affiliateBalanceMin;
+            } else {
+                $thresholdStart = $thresholdMin->getAmount();
+            }
+
+            if (null === $thresholdMax) {
+                $thresholdEnd = $affiliateBalanceMax;
+            } else {
+                $thresholdEnd = $thresholdMax->getAmount();
+            }
+
+            $commonPart = $this->getRangesCommonPart([$affiliateBalanceMin, $affiliateBalanceMax, $thresholdStart, $thresholdEnd]);
+            $provisionSum->add($this->getProvisionAmount($commonPart, $threshold->getPercentage()));
         }
 
         return $provisionSum;
@@ -64,11 +74,37 @@ abstract class RevenueStrategy
      */
     protected function isMoneyRangeMatchToThreshold(float $affiliateBalanceMin, float $affiliateBalanceMax, Threshold $threshold): bool
     {
-        if ($affiliateBalanceMax > $threshold->getMinAmount()->getAmount() && $affiliateBalanceMin < $threshold->getMinAmount()->getAmount()) {
+        $minAmount = $threshold->getMinAmount();
+        $maxAmount = $threshold->getMaxAmount();
+
+        if ((null === $minAmount || $affiliateBalanceMax >= $minAmount->getAmount()) && (null === $maxAmount || $affiliateBalanceMin <= $maxAmount->getAmount())) {
             return true;
         }
 
         return false;
+    }
+
+    /**
+     * @param array $amounts
+     *
+     * @return mixed
+     */
+    protected function getRangesCommonPart(array $amounts)
+    {
+        sort($amounts);
+
+        return $amounts[2] - $amounts[1];
+    }
+
+    /**
+     * @param float $amount
+     * @param float $percent
+     *
+     * @return float
+     */
+    protected function getProvisionAmount(float $amount, float $percent): float
+    {
+        return $amount * $percent;
     }
 
     /**

@@ -7,7 +7,7 @@ use src\models\revenue\RevenueStrategy;
 use src\models\revenue\WrongValueException;
 use src\models\threshold\Threshold;
 
-class BaseRevenuePlan extends RevenueStrategy
+class BaseThresholdPlan extends RevenueStrategy
 {
     /**
      * @throws WrongValueException

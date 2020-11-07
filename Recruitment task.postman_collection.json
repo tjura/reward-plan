@@ -1,0 +1,106 @@
+{
+  "info": {
+    "_postman_id": "de1883c1-7166-4b3e-8324-46ed82ea3e59",
+    "name": "Recruitment task",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Main request for recruitment task",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "player[0][id]",
+              "value": "1",
+              "type": "text"
+            },
+            {
+              "key": "player[0][amount]",
+              "value": "9500",
+              "type": "text"
+            },
+            {
+              "key": "player[0][currency]",
+              "value": "eur",
+              "type": "text"
+            },
+            {
+              "key": "player[1][id]",
+              "value": "2",
+              "type": "text"
+            },
+            {
+              "key": "player[1][amount]",
+              "value": "2340.6",
+              "type": "text"
+            },
+            {
+              "key": "player[1][currency]",
+              "value": "eur",
+              "type": "text"
+            },
+            {
+              "key": "player[2][id]",
+              "value": "3",
+              "type": "text"
+            },
+            {
+              "key": "player[2][amount]",
+              "value": "-3256.12",
+              "type": "text"
+            },
+            {
+              "key": "player[2][currency]",
+              "value": "eur",
+              "type": "text"
+            },
+            {
+              "key": "player[3][id]",
+              "value": "4",
+              "type": "text"
+            },
+            {
+              "key": "player[3][amount]",
+              "value": "-120000",
+              "type": "text"
+            },
+            {
+              "key": "player[3][currency]",
+              "value": "eur",
+              "type": "text"
+            },
+            {
+              "key": "player[4][id]",
+              "value": "5",
+              "type": "text"
+            },
+            {
+              "key": "player[4][amount]",
+              "value": "231415.52",
+              "type": "text"
+            },
+            {
+              "key": "player[4][currency]",
+              "value": "eur",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:6785",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "6785"
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}

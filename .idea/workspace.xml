@@ -20,45 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9a8e21e-a144-4abb-93a6-abdce50cd858" name="Default Changelist" comment="[WIP] - Working version - before tests">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/reward-plan.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/yii2settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.phar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/RequestModelPrototype.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/exception/ApiException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/exception/RequestException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/request/Player.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/response/CalculationResult.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/ApiController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/affiliate/Affiliate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/affiliate/ConfigurationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/money/Amount.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/money/AmountInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/money/AmountPrototype.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/money/CurrencyPrototype.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/money/Money.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/money/MoneyInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/money/MoneyOperationsInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/money/MoneyPrototype.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/money/currency/Euro.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/player/Player.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/player/PlayerCollection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/revenue/RevenueStrategy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/revenue/WrongValueException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/revenue/strategy/BaseRevenuePlan.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/threshold/Threshold.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/user/UserInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/user/UserPrototype.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/CalculationService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/RequestModelPrototype.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/RequestModelPrototype.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/revenue/RevenueStrategy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/revenue/RevenueStrategy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/revenue/strategy/BaseRevenuePlan.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/revenue/strategy/BaseThresholdPlan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/CalculationService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CalculationService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,8 +82,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604673613517</updated>
-      <workItem from="1604673614839" duration="35989000" />
+      <workItem from="1604673614839" duration="45662000" />
     </task>
+    <task id="LOCAL-00001" summary="[WIP] - Working version - before tests">
+      <created>1604754352784</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604754352784</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[WIP] - Working version - before tests">
+      <created>1604754368600</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604754368600</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,8 +116,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="[WIP] - Working version - before tests" />
     <option name="LAST_COMMIT_MESSAGE" value="[WIP] - Working version - before tests" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="98" key="#Plugins" timestamp="1604674126150">
@@ -141,18 +132,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="508" y="139" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1604753522464" />
-    <state x="548" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604754235385">
+    <state x="548" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604755135941">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="548" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1604754235385" />
+    <state x="548" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1604755135941" />
     <state x="594" y="182" key="NewPhpClassDialog" timestamp="1604753282378">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="594" y="182" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1604753282378" />
-    <state x="539" y="380" key="NewPhpFileDialog" timestamp="1604681488772">
+    <state x="539" y="380" key="NewPhpFileDialog" timestamp="1604759426922">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="539" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1604681488772" />
+    <state x="539" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1604759426922" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1604744694145">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -165,6 +156,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="418" y="176" width="604" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1604754012290" />
+    <state x="385" y="210" key="run.anything.popup" timestamp="1604763306885">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1604763306885" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604745192412">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

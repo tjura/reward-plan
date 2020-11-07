@@ -5,6 +5,7 @@ namespace src\api;
 use JsonSerializable;
 use ReflectionClass;
 use ReflectionException;
+use ReflectionProperty;
 use src\api\exception\RequestException;
 use TypeError;
 
@@ -47,7 +48,7 @@ abstract class RequestModelPrototype implements JsonSerializable
         return $result;
     }
 
-    protected static function getName(): string
+    public static function getName(): string
     {
         $path = explode('\\', get_called_class());
 
@@ -55,30 +56,38 @@ abstract class RequestModelPrototype implements JsonSerializable
     }
 
     /**
-     * @param array $vars
+     * @param array $data mixed
      *
      * @throws ReflectionException
+     * @throws RequestException
      */
-    protected function setParams(array $vars): void
+    protected function setParams(array $data): void
     {
         $reflection = new ReflectionClass($this);
         foreach ($reflection->getProperties() as $property) {
-            $name = $property->getName();
-            if (isset($vars[$name])) {
-                $value = $vars[$name];
-            } else {
-                $value = null;
-            }
+            $propertyName = $property->getName();
             try {
-                if (empty($value)) {
-                    $this->$name = null;
-                } else {
-                    $this->$name = $value;
-                }
+                $this->$propertyName = $this->getPropertyValue($data, $property);
             } catch (TypeError $exception) {
-                throw new RequestException(sprintf('Bad request: %s has wrong value. Should be %s given %s', $name, $property->getType(), gettype($value)));
+                throw new RequestException(sprintf('Bad request: %s has wrong value. Should be %s given %s', $propertyName, $property->getType(), gettype($value)));
             }
         }
+    }
+
+    /**
+     * @param array              $data
+     * @param ReflectionProperty $property
+     *
+     * @return mixed
+     */
+    private function getPropertyValue(array $data, ReflectionProperty $property)
+    {
+        $name = $property->getName();
+        if (isset($data[$name])) {
+            return $data[$name];
+        }
+
+        return null;
     }
 
     public function jsonSerialize()
